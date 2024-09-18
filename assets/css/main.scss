@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Bold.ttf);
+    font-weight: 800;
+}
+
+$color-btn: #F2726F;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1020px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.main{
+    background-image: url(../img/main-bg.jpg);
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+
+    &__title{
+        color: #fff;
+        padding-top: 280px;
+        font-size: 56px;
+        max-width: 583px;
+        margin-bottom: 48px;
+    }
+
+    &__btn{
+        background-color: $color-btn;
+        border-radius: 8px;
+        padding: 12px 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.25);
+    }
+}
+
+.about{
+
+    &__wrap{
+        height: 700px;
+        background-color: #5D62B5;
+        border-radius: 40px;
+        margin-top: -80px;
+        position: relative;
+        padding: 87px 100px;
+    }
+
+    &__circles{
+        position: absolute;
+        top: -110px;
+        right: -70px;
+    }
+
+    &__dog{
+        border-radius: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -120px;
+        z-index: 1;
+    }
+
+    &__blob{
+        position: absolute;
+        bottom: -20px;
+        left: 30px;
+    }
+
+    &__who{
+        display: flex;
+        color: #F5F5F5;
+        font-size: 12px;
+        text-transform: uppercase;
+        align-items: center;
+        &-text{
+            margin-left: 10px;
+        }
+    }
+
+    &__title{
+        margin-top: 33px;
+        font-size: 36px;
+        width: 583px;
+        color: #fff;
+        margin-bottom: 36px;
+    }
+
+    &__text{
+        font-size: 16px;
+        width: 846px;
+        color: #F5F5F5;
+        font-weight: 400;
+    }
+}
+
+.promise{
+    margin-top: 230px;
+    &__undertitle{
+        color: #5D62B5;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        &-text{
+            margin-left: 10px;
+        }
+    }
+
+    &__title{
+        font-size: 36px;
+        color: #000000;
+        margin-top: 33px;
+        margin-bottom: 68px;
+    }
+
+    &__blocks{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 122px;
+    }
+
+    &__block{
+        display: flex;
+        width: 324px;
+
+        &-img{
+            margin-right: 23px;
+            width: 63px;
+            height: 63px;
+
+        }
+        
+        &-title{
+            color: $color-btn;
+            font-size: 19px;
+            
+        }
+
+        &-subtitle{
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #4B4B4B;
+        }
+    }
+}
+
+.appointment{
+    position: relative;
+    background-color: #29c3be;
+    background-size: cover;
+    height: 500px;
+    z-index: -1;
+
+    &__circles{
+        position: absolute;
+        left: 0;
+        top: 122px;
+        z-index: 0;
+    }
+
+    &__blob{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    &__puppy{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        top: 44px;
+        left: 3px;
+    }
+
+    &__line{
+        position: absolute;
+        right: 120px;
+        z-index: 0;
+    }
+
+    &__tennis{
+        position: absolute;
+        top: 130px;
+        right: 60px;
+        z-index: 1;
+    }
+
+    &__title{
+        position: absolute;
+        z-index: 4;
+        top: 112px;
+        right: 210px;
+        width: 411px;
+        font-size: 36px;
+        color: #fff;
+    }
+
+    &__btn{
+        position: absolute;
+        z-index: 4;
+        right: 420px;
+        top: 282px;
+        background-color: $color-btn;
+        border-radius: 8px;
+        padding: 12px 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
